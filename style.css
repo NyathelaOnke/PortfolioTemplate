@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+.max-width {
+  padding: 0 80px;
+  margin: auto;
+}
+/* The styling of the navigation bar. */
+
+.navbar.sticky {
+  position: fixed;
+  padding: 19px 0;
+  background: rgba(0, 0, 0, 0.59);
+  backdrop-filter: blur(3.5px);
+  padding: 20px;
+  z-index: 999;
+  width: 100%;
+} 
+.navbar.sticky .menu li a:hover {
+  text-decoration: none;
+  color: rgb(150, 142, 142);
+}
+.navbar.sticky .logo a:hover {
+  font-weight: 550;
+  letter-spacing: 1.6px;
+  text-decoration: none;
+}      
+.navbar {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.79);
+  font-family: "ubuntu", sans-serif;
+  transition: all 0.5 ease;
+}
+.navbar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .menu li a span {
+  color: whitesmoke;
+  font-size: 0.8vw;
+  font-weight: 500;
+  letter-spacing: 0.03vw;
+  transition: color 0.4s ease-out;
+}
+.navbar .menu li a span:hover {
+  text-decoration: none;
+  color: rgb(150, 142, 142);
+}
+.navbar .menu li a:hover {
+  text-decoration: none;
+  color: rgb(170, 170, 170);
+}
+.navbar .logo a {
+  position: relative;
+  right: 9vw;
+  color: whitesmoke;
+  font-size: 2.3vw;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+}
+.navbar .logo a:hover {
+  font-weight: 550;
+  letter-spacing: 1.6px;
+  text-decoration: none;
+}
+
+.navbar .logo span {
+  color: red;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  position: relative;
+  left: 8vw;
+  color: whitesmoke;
+  font-size: 1vw;
+  font-weight: 600;
+  margin-left: 2vw;
+  letter-spacing: 0.5px;
+  transition: color 0.4s ease-out;
+  opacity: 0.95;
+}
+.navbar .menu li a:hover {
+  text-decoration: none;
+  color: rgb(102, 100, 100);
+}
+
+.menu-btn {
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  cursor: pointer;
+  display: none;
+}
+.navbar .social{
+  display: flex;
+  list-style: none;
+}
+.navbar .social a img{
+  width: 1.9vw;
+  height: 1.9vw;
+  margin-left: 1.3vw;
+  border-radius: 25%;
+}
+
+.navbar .social a img:hover{
+  width: 2.05vw;
+  height: 2.05vw;
+}
+
+.home {
+  background-image: linear-gradient(to bottom,
+      rgba(66, 77, 141, 0.42),
+      rgba(49, 51, 36, 0.63)),
+    url("media/backpichome.jpg");
+  margin-bottom: 3vw;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 .4vw;
+}
+.home  .column{
+  -ms-flex: 25%;
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 .5vw;
+}
+.home  .column img{
+  margin-top: .8vw;
+  vertical-align: middle;
+  width: 100%;
+}
+.home  .container .media p{
+  border-radius: 6px;
+  color: whitesmoke;
+  text-align: center;
+  align-items: center;
+  font-size: 2vw;
+}
+
+
+/* About me styling starts here*/
+
+.about {
+  height: 75vw;
+  background: rgb(255, 245, 233);
+}
+.about .tittle p {
+  font-weight: 700;
+  font-size: 3vw;
+}
+.about .about-content p {
+  position: relative;
+  top: 5vw;
+  margin-top: 0.5vw;
+  width: 100%;
+  border-radius: 6px;
+  color: #f7f7f7;
+  text-align: center;
+  align-items: center;
+  font-size: 1.8vw;
+}
+
+.about .about-content p a:hover{
+  color: rgb(243, 185, 109);
+}
+
+.about .about-content p a{
+  color: rgb(255, 231, 200);
+  text-decoration: none;
+}
+.about .tittle p span {
+  color: red;
+}
+.about .about-content {
+  display: inline-block;
+  margin-left: 30px;
+  background: black;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  height: 65vw;
+  border-radius: 5px;
+  position: relative;
+  right: 25px;
+  box-shadow: .31vw .31vw .31vw -.31vw black;
+}
+.about .about-content img {
+  position: relative;
+  left: 40%;
+  top: 1.5vw;
+  width: 21vw;
+  height: 21.3vw;
+  border-radius: 10px;
+  opacity: 0.85;
+}
+
+/* My Content styling starts here */
+.content {
+  background: blanchedalmond;
+  padding-top: 60px;
+  width: 100%;
+}
+
+/* TV projects styling */
+.content .tittle{
+  font-weight: 500;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.content .the-content h1{
+  font-size: 3.5vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.content .the-content .videos .vids iframe{
+  width: 100%;
+}
+.content .the-content .videos .vids{
+  margin-left: 2.5vw;
+}
+.content .the-content .videos{
+  display: flex;
+  margin-bottom: 6vw;
+}
+.content .the-content .articles{
+  display: flex;
+}
+.content .the-content .last .post{
+  margin-bottom: 7vw;
+}
+.content .the-content .articles .post{
+  width: 100%;
+  background: white;
+  border-radius: 1.2vw;
+  margin-left: 1.8vw;
+  margin-top: 2.2vw;
+  box-shadow: .31vw .31vw .31vw -.31vw black;
+}
+.content .the-content .articles .post img{
+  width: 100%;
+  border-radius: 1.2vw;
+}
+.content .the-content .articles .post p a{
+  color: crimson;
+  font-size: 1.5vw;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  transition: all .4s;
+}
+.content .the-content .articles .post p a:hover{
+  color: rgb(243, 185, 109);
+}
+.content .the-content .articles .post i{
+  color: red;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 800;
+}
+/* Contact me page */
+
+.contact {
+  height: 100vw;
+  background: blanchedalmond;
+}
+.contact .tittle,
+.about .tittle,
+.content .tittle {
+  position: relative;
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 450;
+}
+.contact .contact-content {
+  font-size: 2.5vw;
+}
+
+.contact .contact-content .social {
+  display: flex;
+  list-style: none;
+  position: relative;
+  top: 10px;
+}
+
+.contact .contact-content .social a img {
+  width: 2vw;
+  height: 2vw;
+  margin-left: 15px;
+  border-radius: 25%;
+}
+
+.contact .contact-content .social a img:hover {
+  width: 3vw;
+  height: 3vw;
+}
+.contact .contact-content .icons {
+  position: relative;
+  top: 40px;
+  margin-top: 30px;
+  width: calc(58% - 45px);
+}
+.contact .contact-content .text {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.contact .contact-content p {
+  text-align: justify;
+}
+.contact .contact-content .rows i {
+  font-size: 20px;
+  color: sienna;
+}
+.contact .contact-content .rows .info {
+  position: relative;
+  margin-bottom: 2px;
+}
+.contact .contact-content .icons .rows .info .head {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type="submit"] {
+  background-color: sandybrown;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="submit"]:hover {
+  background-color: saddlebrown;
+}
+
+.container {
+  position: relative;
+  top: 50px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  color: whitesmoke;
+  background: rgba(0, 0, 0, 0.65);
+  height: 70px;
+  text-align: center;
+}
+
+footer p {
+  position: relative;
+  top: 19px;
+  font-size: 1.8vw;
+}
+
+footer p a {
+  color: sandybrown;
+  text-decoration: none;
+}
+
+footer p a:hover {
+  color: sandybrown;
+}
+
+@media (max-width: 860px) {
+  .max-width {
+    padding: 0 85px;
+  }
+
+  .navbar .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: chocolate;
+    text-align: center;
+    padding: 50px;
+    transition: all 0.3s ease-in;
+  }
+
+  .navbar .menu.active {
+    left: 0;
+  }
+
+  .navbar .menu li {
+    display: block;
+  }
+
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 25px 10px;
+    font-size: 15px;
+  }
+
+  .navbar .logo a {
+    position: relative;
+    right: 15%;
+  }
+  .home{
+    height: 72vw;
+  }
+.home .home-content {
+  position: relative;
+  bottom: 8vw;
+  right: 11px;
+  width: 60vw;
+}
+.about{
+  height: 90vw;
+}
+
+.about .about-content{
+  height: 85vw;
+  width: 70vw;
+  position: relative;
+  right: 54px;
+  bottom: 6vw;
+}
+.content{
+  height: 715vw;
+}
+
+.content .the-content .videos{
+  height: 150vw;
+}
+
+.contact {
+  height: 260vw;
+}
+
+footer p {
+  position: relative;
+  top: 42px;
+}
+}
